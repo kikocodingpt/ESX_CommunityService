@@ -1,6 +1,4 @@
-ESX = nil
-
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject()
 
 
 TriggerEvent('es:addGroupCommand', 'comserv', 'admin', function(source, args, user)
